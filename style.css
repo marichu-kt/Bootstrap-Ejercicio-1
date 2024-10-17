@@ -1,0 +1,146 @@
+/*█▀▀ █▀ ▀█▀ █ █░░ █▀█ █▀   ▀█▀ █ █▀█ █▀█ █▀▀ █▀█ ▄▀█ █▀▀ █ █▀▀ █▀█ █▀   █▄█   █▀▀ █▀▀ █▀▀ █▀▀ ▀█▀ █▀█ █▀  █▀▄ █▀▀   █ █▀▄▀█ ▄▀█ █▀▀ █▀▀ █▄░█*/
+/*██▄ ▄█ ░█░ █ █▄▄ █▄█ ▄█   ░█░ █ █▀▀ █▄█ █▄█ █▀▄ █▀█ █▀░ █ █▄▄ █▄█ ▄█   ░█░   ██▄ █▀░ ██▄ █▄▄ ░█░ █▄█ ▄█  █▄▀ ██▄   █ █░▀░█ █▀█ █▄█ ██▄ █░▀█*/
+
+.silkscreen-font {
+    font-family: 'Silkscreen', cursive;
+    color: #fbff00; 
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+h3 {
+    font-family: 'Metal Mania', cursive;
+    color: rgb(255, 0, 0); 
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+
+p {
+    color: rgb(255, 0, 0); 
+    font-family: 'Reenie Beanie', cursive; 
+    font-size: 1.2rem !important; 
+    font-weight: bold; /* O bien un valor numérico como 700 */
+
+}
+
+body {
+    background-color: #490000;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    filter: blur(2px); 
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: blur(0); 
+}
+
+/*█▀▄▀█ █▀▀ █▀▄ █ ▄▀█   █▀█ █░█ █▀▀ █▀█ █ █▀▀ █▀   █▀▀ █▀█ █▄░█   █▀█ ▄▀█ █▄░█ █▀▀ █▀█ █▀   █▀▄ █▀▀  █▀█ █▀▀ █▀ █▀█ █░░ █░█ █▀▀ █ █▀█ █▄░█*/
+/*█░▀░█ ██▄ █▄▀ █ █▀█   ▀▀█ █▄█ ██▄ █▀▄ █ ██▄ ▄█   █▄▄ █▄█ █░▀█   █▀▄ █▀█ █░▀█ █▄█ █▄█ ▄█   █▄▀ ██▄  █▀▄ ██▄ ▄█ █▄█ █▄▄ █▄█ █▄▄ █ █▄█ █░▀█*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 767px) {
+    h1 {
+        color: #3F51B5;
+        font-size: 2rem;
+    }
+
+    .col-lg-6 img {
+        margin-bottom: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        color: #ff66e3; /* Verde para pantallas pequeñas */
+    }
+
+    .name-course {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 300px; 
+        margin: 0 auto; 
+    }
+
+    .name-course p {
+        margin: 0;
+    }
+}
+
+/* Medium devices (tablets, entre 768px y 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1 {
+        color: #FF5722;
+        font-size: 2.5rem;
+    }
+
+    .d-flex img {
+        max-width: 60%;
+        margin-bottom: 20px;
+        margin-right: 30px;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #fbff00; /* Magenta para pantallas medianas */
+    }
+
+    .d-flex {
+        flex-direction: row;
+    }
+}
+
+/* Large devices (desktops, entre 992px y 1199.98px) */
+@media (min-width: 992px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+        color: #ff0000; /* Azul para pantallas grandes */
+    }
+
+    .d-flex {
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .d-flex img {
+        max-width: 40%;
+        margin-right: 20px;
+    }
+
+    .d-flex div {
+        width: 55%;
+    }
+}
