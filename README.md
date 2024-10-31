@@ -16,9 +16,7 @@ Welcome to my Website! This page is intended to describe the purpose or main con
 ## Description
 
 This project is based on HTML/CSS code, designed for the work of the Web Development subject, 
-it tries to ensure that users can easily follow each section and section in an efficient manner. It is also designed 
-for onion routing search engines such as Tor Browser, which allows us to view this page on the Internet without having 
-to download it and view it locally if not remotely.
+it tries to ensure that users can easily follow each section and section in an efficient manner.
 
 ## Content
 
